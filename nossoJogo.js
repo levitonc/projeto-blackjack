@@ -36,19 +36,25 @@
       // LÓGICA PARA OBTENÇÃO DOS RESULTADOS VÁLIDOS
          if ((pontosUser > pontosPc) && (pontosUser <= 21)){
             console.log(`Você Venceu! Parabéns.`)
+            console.log(`Fim do jogo. Caso queira jogar outra partida, recarregue a página do navegador.`)
          } else if (pontosPc === pontosUser) {
             console.log(`EMPATOU!`)
+            console.log(`Fim do jogo. Caso queira jogar outra partida, recarregue a página do navegador.`)
          } else if ((pontosPc > pontosUser) && (pontosPc <= 21)){
             console.log(`O PC Venceu. Quem sabe da próxima?`)
+            console.log(`Fim do jogo. Caso queira jogar outra partida, recarregue a página do navegador.`)
          }
       
       // LÓGICA PARA OBTENÇÃO DE RESULTADOS ESTOURADOS 
          if ((pontosUser > pontosPc) && (pontosUser > 21)){
             console.log(`Sua Pontuação estourou. Vitória do PC.`)
+            console.log(`Fim do jogo. Caso queira jogar outra partida, recarregue a página do navegador.`)
          } else if ((pontosPc > pontosUser) && (pontosPc > 21)){
             console.log(`A pontuação do PC estourou. Parabéns, você venceu!`)
+            console.log(`Fim do jogo. Caso queira jogar outra partida, recarregue a página do navegador.`)
          } else if ((pontosPc > 21) && (pontosUser > 21)){
             console.log(`Estouro duplo.`)
+            console.log(`Fim do jogo. Caso queira jogar outra partida, recarregue a página do navegador.`)
          }
       
       // Último senão, para acabar e começar uma nova partida 
